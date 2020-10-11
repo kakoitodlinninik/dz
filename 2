@@ -1,0 +1,12 @@
+def matmult(m1,m2):
+r=[]
+m=[]
+for i in range(len(m1)):
+    for j in range(len(m2[0])):
+        sums=0
+        for k in range(len(m2)):
+            sums=sums+(m1[i][k]*m2[k][j])
+        r.append(sums)
+    m.append(r)
+    r=[]
+return m
