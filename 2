@@ -1,12 +1,5 @@
-def matmult(m1,m2):
-r=[]
-m=[]
-for i in range(len(m1)):
-    for j in range(len(m2[0])):
-        sums=0
-        for k in range(len(m2)):
-            sums=sums+(m1[i][k]*m2[k][j])
-        r.append(sums)
-    m.append(r)
-    r=[]
-return m
+import numpy as np
+a = np.array([ [2, 1, 3], [2, 2, 4] ])
+b = np.array([ [1, 1], [3, 2], [2, 4] ])
+total = a.dot(b)
+print(total)
